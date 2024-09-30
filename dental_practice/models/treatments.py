@@ -16,7 +16,7 @@ class OdooExpTreatment(models.Model):
     treatment_profile = fields.Many2one('odooexp.treatment_profile', string='Treatment Profile')
     treatment_cost = fields.Float(string='Treatment Cost') # Replace with calculated field, after adding interventions
     # treatment_interventions = fields.One2many('odooexp.treatment_interventions', 'treatment_id', string='Interventions') # Add this after adding interventions
-    teeth = fields.Many2Many("odooexp.tooth", string='Teeth for treatment')
+    teeth = fields.Many2many("odooexp.tooth", string='Teeth for treatment')
 
 
 class TreatmentProfile(models.Model):
