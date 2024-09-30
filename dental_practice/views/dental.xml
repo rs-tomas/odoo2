@@ -7,7 +7,7 @@
 	<record id="action_menu_treatments" model="ir.actions.act_window">
 		<field name="name">Treatments</field>
 		<field name="res_model">dental.treatment</field>
-		<field name="view_mode">list,form</field>
+		<field name="view_mode">list,form,calendar</field>
 	</record>
 	<menuitem id="menu_treatments"
 		name="Treatments"
