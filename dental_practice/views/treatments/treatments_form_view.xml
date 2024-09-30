@@ -20,7 +20,7 @@
                         <page string="Interventions">
                             <group>
                                 <field name="interventions_ids">
-                                    <list string="Interventions">
+                                    <list string="Interventions" editable="top">
                                         <field name="name" />
                                         <field name="date" />
                                         <field name="product_id" />
