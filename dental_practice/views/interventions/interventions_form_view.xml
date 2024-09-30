@@ -11,7 +11,7 @@
                             <field name="name" />
                             <field name="date" />
                         </group>
-                        <group string="Intervention Product & Notes">
+                        <group string="Intervention Product and Notes">
                             <field name="product_id" />
                             <field name="notes" />
                         </group>
