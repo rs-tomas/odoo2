@@ -14,5 +14,6 @@ class DentalTreatment(models.Model):
     #tooth_number = fields.Char(string='Tooth Number')
 
     notes = fields.Text(string='Notes')
-    invoice_id = fields.Many2one('account.move', string='Invoice', readonly=True)
+    # invoice_id = fields.Many2one('account.move', string='Invoice', readonly=True)
     interventions_ids = fields.Many2many('dental.intervention', string='Interventions')
+    sales_order_id = fields.Many2one('sale.order', string='Sales Order', readonly=True)
