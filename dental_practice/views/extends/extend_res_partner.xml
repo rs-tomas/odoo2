@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="extend_res_partner_form_view" model="ir.ui.view">
+            <field name="name">extend.res.partner.form.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="is_patient" string="Is Patient" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

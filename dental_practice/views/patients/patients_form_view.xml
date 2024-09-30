@@ -7,19 +7,23 @@
             <form string="my_form">
                 <sheet>
                     <group>
-                        <group string="Data">
-                            <field name="name" />
+                        <field name="name" />
+                        <group string="Patient info">
+                            <field name="age" />
+                            <field name="email" />
+                            <field name="phone" />
                         </group>
-                        <group string="Other Data">
-
+                        <group string="Clinic data">
+                            <field name="is_patient" />
                         </group>
+                        <field name="medical_history" />
                     </group>
                 </sheet>
-                <div class="oe_chatter">
+                <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />
                     <field name="activity_ids" />
                     <field name="message_ids" />
-                </div>
+                </div> -->
             </form>
         </field>
     </record>

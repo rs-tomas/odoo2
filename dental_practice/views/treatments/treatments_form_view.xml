@@ -16,6 +16,22 @@
                             <field name="sales_order_id" />
                         </group>
                     </group>
+                    <notebook>
+                        <page string="Interventions">
+                            <group>
+                                <field name="interventions_ids">
+                                    <list string="Interventions">
+                                        <field name="name" />
+                                        <field name="date" />
+                                        <field name="product_id" />
+                                    </list>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Notes">
+                            <field name="notes" />
+                        </page>
+                    </notebook>
                 </sheet>
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />

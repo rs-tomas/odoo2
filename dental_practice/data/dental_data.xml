@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1"><!-- cretae a los of products -->
+        <record id="intervention_1" model="product.product">
+            <field name="name">Dental cleaning</field>
+            <field name="type">service</field>
+            <field name="list_price">50.0</field>
+        </record>
+
+        <record id="intervention_2" model="product.product">
+            <field name="name">Dental filling</field>
+            <field name="type">service</field>
+            <field name="list_price">100.0</field>
+        </record>
+
+        <record id="intervention_3" model="product.product">
+            <field name="name">Dental crown</field>
+            <field name="type">service</field>
+            <field name="list_price">300.0</field>
+        </record>
+
+        <record id="intervention_4" model="product.product">
+            <field name="name">Dental implant</field>
+            <field name="type">service</field>
+            <field name="list_price">500.0</field>
+        </record>
+
+        <record id="intervention_5" model="product.product">
+            <field name="name">Dental braces</field>
+            <field name="type">service</field>
+            <field name="list_price">1000.0</field>
+        </record>
+    </data>
+</odoo>
