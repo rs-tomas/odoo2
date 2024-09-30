@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dental_treatment_view_calendar" model="ir.ui.view">
+        <field name="name">dental.treatment.view.calendar</field>
+        <field name="model">dental.treatment</field>
+        <field name="arch" type="xml">
+            <calendar date_start="date" string="Dental Treatment Calendar"
+                mode="week" color="name" event_open_popup="true"
+                form_view_id="odooexp_treatments_form"
+                date_stop="end_date"
+                show_unusual_days="True"
+                quick_create="0">
+                <field name="name" />
+                <field name="patient_id" />
+            </calendar>
+        </field>
+    </record>
+</odoo>
