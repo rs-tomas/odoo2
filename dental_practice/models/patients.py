@@ -16,8 +16,7 @@ class OdooExpPatient(models.Model):
     # Add a computed field to calculate the age of the patient
     age = fields.Integer(string='Age', compute='_compute_age', store=True)
     # inverse field for the patiend_id of interventions and treatments
-    intervention_ids = fields.One2many('dental.intervention', 'patient_id', string='Interventions')
-    treatment_ids = fields.One2many('dental.treatment', 'patient_id', string='Treatments')
+    intervention_ids = fields.One2many('dental.intervention', string='Interventions')
 
 
     @api.depends('birth_date')
