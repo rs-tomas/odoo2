@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Teeth Cleaning -->
+    <record id="product_teeth_cleaning" model="product.product">
+        <field name="name">Teeth Cleaning</field>
+        <field name="type">service</field>
+        <field name="list_price">75.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-CLN</field>
+        <field name="description_sale">Professional teeth cleaning to remove plaque and tartar.</field>
+    </record>
+
+    <!-- Cavity Filling -->
+    <record id="product_cavity_filling" model="product.product">
+        <field name="name">Cavity Filling</field>
+        <field name="type">service</field>
+        <field name="list_price">120.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-FILL</field>
+        <field name="description_sale">Filling cavities using composite resin or amalgam.</field>
+    </record>
+
+    <!-- Root Canal Therapy -->
+    <record id="product_root_canal" model="product.product">
+        <field name="name">Root Canal Therapy</field>
+        <field name="type">service</field>
+        <field name="list_price">500.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-RCT</field>
+        <field name="description_sale">Treatment for infected tooth pulp to save a damaged tooth.</field>
+    </record>
+
+    <!-- Teeth Whitening -->
+    <record id="product_teeth_whitening" model="product.product">
+        <field name="name">Teeth Whitening</field>
+        <field name="type">service</field>
+        <field name="list_price">200.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-WHT</field>
+        <field name="description_sale">Cosmetic whitening procedure to brighten teeth.</field>
+    </record>
+
+    <!-- Dental Crown -->
+    <record id="product_dental_crown" model="product.product">
+        <field name="name">Dental Crown</field>
+        <field name="type">service</field>
+        <field name="list_price">1000.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-CRWN</field>
+        <field name="description_sale">Crown restoration to cover and protect a damaged tooth.</field>
+    </record>
+
+    <!-- Dental Implants -->
+    <record id="product_dental_implants" model="product.product">
+        <field name="name">Dental Implants</field>
+        <field name="type">service</field>
+        <field name="list_price">3000.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-IMPL</field>
+        <field name="description_sale">Surgical implantation of a replacement tooth root.</field>
+    </record>
+
+    <!-- Braces -->
+    <record id="product_dental_braces" model="product.product">
+        <field name="name">Orthodontic Braces</field>
+        <field name="type">service</field>
+        <field name="list_price">2500.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-BRCS</field>
+        <field name="description_sale">Orthodontic braces for alignment and straightening of teeth.</field>
+    </record>
+
+    <!-- Wisdom Tooth Extraction -->
+    <record id="product_wisdom_tooth_extraction" model="product.product">
+        <field name="name">Wisdom Tooth Extraction</field>
+        <field name="type">service</field>
+        <field name="list_price">400.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-WTX</field>
+        <field name="description_sale">Surgical extraction of impacted or infected wisdom teeth.</field>
+    </record>
+
+    <!-- Fluoride Treatment -->
+    <record id="product_fluoride_treatment" model="product.product">
+        <field name="name">Fluoride Treatment</field>
+        <field name="type">service</field>
+        <field name="list_price">50.00</field>
+        <field name="categ_id" ref="product_category_dental_services"/>
+        <field name="default_code">DENTAL-FLT</field>
+        <field name="description_sale">Topical fluoride treatment to prevent tooth decay.</field>
+    </record>
+</odoo>
+
+<odoo>
+    <record id="product_category_dental_services" model="product.category">
+        <field name="name">Dental Services</field>
+        <field name="parent_id" ref="base_category_service"/>
+    </record>
+</odoo>
+
