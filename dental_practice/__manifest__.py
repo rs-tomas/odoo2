@@ -6,7 +6,7 @@
     'sequence': 1,
     'author': 'Odoo S.A.',
     'website': 'http://www.odoo.com',
-    'depends': ['base'],
+    'depends': ['base', 'mail'],
     'data': [
         'views/dental.xml',
         'security/ir.model.access.csv'
