@@ -16,6 +16,7 @@
         #'views/patients/patients_tree_view.xml',
         'views/treatments/treatments_form_view.xml',
         'views/treatments/treatments_tree_view.xml',
+        'views/treatments/treatments_calendar_view.xml'
     ],
     'assets': {
         'web.assets_backend': [

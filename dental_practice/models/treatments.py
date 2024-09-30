@@ -11,6 +11,7 @@ class DentalTreatment(models.Model):
     name = fields.Char(string='Treatment Name', required=True)
     patient_id = fields.Many2one('res.partner', string='Patient', required=True, domain=[('is_patient', '=', True)])
     date = fields.Date(string='Date', default=fields.Date.context_today, required=True)
+    end_date = fields.Date(string='End Date')
     #tooth_number = fields.Char(string='Tooth Number')
 
     notes = fields.Text(string='Notes')
