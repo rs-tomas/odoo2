@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="odooexp_treatments_tree" model="ir.ui.view">
-        <field name="name">dental.treatment.tree</field>
+        <field name="name">dental.treatment.list</field>
         <field name="model">dental.treatment</field>
         <field name="arch" type="xml">
-            <list string="my_tree">
+            <list string="my_list">
                 <field name="name" />
+                <field name="patient_id" />
+                <field name="date" />
+                <field name="sales_order_id" />
             </list>
         </field>
     </record>

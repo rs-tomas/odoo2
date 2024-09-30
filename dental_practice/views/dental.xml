@@ -3,6 +3,7 @@
 	<menuitem id="menu_dental" name="Dental Practice" sequence="20" web_icon="dental_practice,static/src/img/dental_practice.png" />
 
 	<menuitem id="menu_dental_dropdown" name="Management" parent="menu_dental" sequence="1" />
+	<menuitem id="menu_dental_patients" name="Patients" parent="menu_dental" sequence="2" />
 
 	<record id="action_menu_treatments" model="ir.actions.act_window">
 		<field name="name">Treatments</field>
@@ -24,4 +25,16 @@
 		name="Interventions"
 		action="action_menu_interventions"
 		parent="menu_dental_dropdown"
-		sequence="5" /> --> </data>
+		sequence="5" />
+
+	<record id="action_menu_patients" model="ir.actions.act_window">
+		<field name="name">Patients</field>
+		<field name="res_model">res.partner</field>
+		<field name="view_mode">list,form</field>
+	</record>
+	<menuitem id="menu_patients"
+		name="Patients"
+		action="action_menu_patients"
+		parent="menu_dental_patients"
+		sequence="7" />
+</data>
