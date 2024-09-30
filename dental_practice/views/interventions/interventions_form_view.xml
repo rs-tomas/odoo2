@@ -4,14 +4,16 @@
         <field name="name">dental.interventions.form</field>
         <field name="model">dental.intervention</field>
         <field name="arch" type="xml">
-            <form string="my_form">
+            <form string="Dental Intervention">
                 <sheet>
                     <group>
-                        <group string="Data">
+                        <group string="Intervention Details">
                             <field name="name" />
+                            <field name="date" />
                         </group>
-                        <group string="Other Data">
-
+                        <group string="Intervention Product & Notes">
+                            <field name="product_id" />
+                            <field name="notes" />
                         </group>
                     </group>
                 </sheet>

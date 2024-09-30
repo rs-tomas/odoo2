@@ -4,9 +4,11 @@
         <field name="name">dental.interventions.tree</field>
         <field name="model">dental.intervention</field>
         <field name="arch" type="xml">
-            <list string="my_list">
+            <tree string="Interventions">
                 <field name="name" />
-            </list>
+                <field name="date" />
+                <field name="product_id" />
+            </tree>
         </field>
     </record>
 </odoo>
