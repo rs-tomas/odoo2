@@ -5,7 +5,6 @@
         <field name="model">odooexp.interventions</field>
         <field name="arch" type="xml">
             <tree string="my_tree">
-                <field name="create_date" string="Date/time" />
                 <field name="name" />
             </tree>
         </field>
