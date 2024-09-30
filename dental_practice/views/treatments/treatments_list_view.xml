@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="odooexp_treatments_list" model="ir.ui.view">
+        <field name="name">odooexp.treatments.list</field>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+            <list string="my_list">
+                <field name="create_date" string="Date/time" />
+                <field name="name" />
+                <field name="patient_id" />
+                <field name="treatment_profile" />
+                <field name="treatment_cost" />
+            </list>
+        </field>
+    </record>
+</odoo>
