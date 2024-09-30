@@ -16,9 +16,9 @@
         #'views/patients/patients_tree_view.xml',
         'views/treatments/treatments_form_view.xml',
         'views/treatments/treatments_tree_view.xml',
-        'views/treatments/treatments_calendar_view.xml'
+        'views/treatments/treatments_calendar_view.xml',
         'data/dental_data.xml',
-        'views/extends/extend_res_partner.xml'
+        'views/extends/extend_res_partner.xml',
     ],
     'assets': {
         'web.assets_backend': [
