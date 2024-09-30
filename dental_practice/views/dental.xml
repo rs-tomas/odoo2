@@ -24,4 +24,5 @@
 		name="Interventions"
 		action="action_menu_interventions"
 		parent="menu_dental_dropdown"
-		sequence="5" /> --> </data>
+		sequence="5" />
+</data>

@@ -9,17 +9,19 @@
                     <group>
                         <group string="Data">
                             <field name="name" />
+                            <field name="patient_id" />
                         </group>
                         <group string="Other Data">
-
+                            <field name="date" />
+                            <field name="sales_order_id" />
                         </group>
                     </group>
                 </sheet>
-                <div class="oe_chatter">
+                <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />
                     <field name="activity_ids" />
                     <field name="message_ids" />
-                </div>
+                </div> -->
             </form>
         </field>
     </record>
