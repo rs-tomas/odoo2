@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="odooexp_interventions_tree" model="ir.ui.view">
-        <field name="name">odooexp.interventions.tree</field>
-        <field name="model">odooexp.interventions</field>
+        <field name="name">dental.interventions.tree</field>
+        <field name="model">dental.intervention</field>
         <field name="arch" type="xml">
             <list string="my_list">
                 <field name="name" />

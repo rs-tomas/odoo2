@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="odooexp_treatments_form" model="ir.ui.view">
-        <field name="name">odooexp.treatments.form</field>
-        <field name="model">odooexp.treatments</field>
+        <field name="name">dental.treatments.form</field>
+        <field name="model">dental.treatment</field>
         <field name="arch" type="xml">
             <form string="my_form">
                 <sheet>
