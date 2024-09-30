@@ -1,0 +1,27 @@
+# dotfiles
+.*
+!.devcontainer/
+!.devcontainer/*
+!.vscode
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.gitignore
+!.gitattributes
+!.github
+!.mailmap
+!.scripts
+!.scripts/*
+!.githooks
+!.githooks/*
+!.dockerignore
+# compiled python files
+*.py[co]
+__pycache__/
+# setup.py egg_info
+*.egg-info
+# emacs backup files
+*~
+
+/venv/
