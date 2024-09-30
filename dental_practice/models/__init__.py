@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import dental, interventions, patients, treatments
+from . import patients, dental, interventions, treatments

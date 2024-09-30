@@ -4,9 +4,9 @@
         <field name="name">odooexp.interventions.tree</field>
         <field name="model">odooexp.interventions</field>
         <field name="arch" type="xml">
-            <tree string="my_tree">
+            <list string="my_list">
                 <field name="name" />
-            </tree>
+            </list>
         </field>
     </record>
 </odoo>

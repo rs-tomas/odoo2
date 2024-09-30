@@ -25,4 +25,3 @@ class OdooExpPatient(models.Model):
                 record.age = fields.Date.from_string(fields.Date.today()).year - fields.Date.from_string(record.birth_date).year
             else:
                 record.age = 0
-    
