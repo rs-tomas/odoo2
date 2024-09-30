@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 dental_practice.access_odooexp_interventions,access_odooexp_interventions,dental_practice.model_odooexp_interventions,base.group_user,1,1,1,1
 dental_practice.access_odooexp_patients,access_odooexp_patients,dental_practice.model_odooexp_patients,base.group_user,1,1,1,1
-dental_practice.access_odooexp_treatments,access_odooexp_treatments,dental_practice.model_odooexp_treatments,base.group_user,1,1,1,1
+dental_practice.access_odooexp_treatments,access_odooexp_treatments,dental_practice.model_sale_order,base.group_user,1,1,1,1
