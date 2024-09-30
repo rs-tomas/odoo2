@@ -1,6 +1,6 @@
-<!-- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <data>
-	<menuitem id="menu_dental" name="Dental Practice" sequence="20" web_icon="dental_practice,static/src/img/dental_practice.png" />
+	<!-- <menuitem id="menu_dental" name="Dental Practice" sequence="20" web_icon="dental_practice,static/src/img/dental_practice.png" />
 
 	<menuitem id="menu_dental_dropdown" name="Management" parent="menu_dental" sequence="1" />
 
@@ -35,6 +35,6 @@
 		name="Interventions"
 		action="action_menu_interventions"
 		parent="menu_dental_dropdown"
-		sequence="5" />
+		sequence="5" /> -->
 
-</data> -->
+</data>
