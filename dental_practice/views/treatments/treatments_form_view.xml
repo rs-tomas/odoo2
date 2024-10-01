@@ -22,17 +22,16 @@
                             <field name="interventions_ids">
                                 <list editable="top">
                                     <field name="name" />
-                                    <field name="date" />
-                                    <field name="product_id" />
+
                                 </list>
                             </field>
                         </page>
                         <page string="Notes">
-                            <field name="notes" placeholder="Notes about treatment or patient"/>
+                            <field name="notes" placeholder="Notes about treatment or patient" />
                         </page>
                     </notebook>
                     <group>
-                        <field name="teeth" widget="many2many_tags"/>
+                        <field name="teeth" widget="many2many_tags" />
                     </group>
                 </sheet>
                 <!-- <div class="oe_chatter">

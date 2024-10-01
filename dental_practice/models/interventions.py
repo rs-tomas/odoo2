@@ -13,4 +13,4 @@ class OdooExpInterventions(models.Model):
     notes = fields.Text(string='Notes')
     # using product.product for Interventions and Treatments
     product_id = fields.Many2one('product.product', string='Intervention Product')
-    treatment_id = fields.Many2one('dental.treatment', string='Intervention')
+    treatment_id = fields.Many2many('dental.treatment', string='Intervention')
