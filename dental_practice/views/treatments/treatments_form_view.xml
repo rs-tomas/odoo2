@@ -22,7 +22,7 @@
                             <field name="interventions_ids">
                                 <list editable="top">
                                     <field name="name" />
-
+                                    <field name="teeth" widget="tooth_chart" />
                                 </list>
                             </field>
                         </page>

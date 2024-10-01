@@ -24,16 +24,17 @@ class DentalTreatment(models.Model):
 # hook the write method to create a sales order. Each intervention is a sale order line.
     def write(self, vals):
         res = super(DentalTreatment, self).write(vals)
+
+        if 'interventions_ids' not in vals:
+            return res
+
         # first check if sale order already exists
         if not self.sales_order_id:
             self.create_sale_order()
 
-        print(vals)
-        # 4 is add, 3 is delete
-
         sale_order = self.sales_order_id
         for intervention in vals.get('interventions_ids', []):
-            action, intervention_id = intervention
+            action, intervention_id, data = intervention
             intervention_id = self.env['dental.intervention'].browse(intervention_id)
             if action == 4:  # add
                 sale_order.order_line.create({
