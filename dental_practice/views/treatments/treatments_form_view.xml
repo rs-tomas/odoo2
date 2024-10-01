@@ -34,7 +34,7 @@
                         </page>
                     </notebook>
                     <group>
-                        <field name="teeth_ids" widget="many2many_checkboxes"/>
+                        <field name="teeth" widget="many2many_checkboxes"/>
                     </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
