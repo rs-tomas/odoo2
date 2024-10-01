@@ -8,7 +8,6 @@
                 mode="week" color="name" event_open_popup="true"
                 form_view_id="odooexp_treatments_form"
                 date_stop="end_date"
-                show_unusual_days="True"
                 quick_create="0">
                 <field name="name" />
                 <field name="patient_id" />
