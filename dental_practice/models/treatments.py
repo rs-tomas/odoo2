@@ -16,7 +16,7 @@ class DentalTreatment(models.Model):
 
     notes = fields.Text(string='Notes')
     # invoice_id = fields.Many2one('account.move', string='Invoice', readonly=True)
-    interventions_ids = fields.One2many('dental.intervention', 'treatement_id', string='Interventions')
+    interventions_ids = fields.One2many('dental.intervention', 'treatment_id', string='Interventions')
     sales_order_id = fields.Many2one('sale.order', string='Sales Order', readonly=True)
     profile = fields.Selection([("Therapy", "Therapy"), ("Surgery", "Surgery"), ("Orthodontics", "Orthodontics")], string='Treatment Profile')
     teeth = fields.Many2many("dental.tooth", string='Teeth for treatment')
