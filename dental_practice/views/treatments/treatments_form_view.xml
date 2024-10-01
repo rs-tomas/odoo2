@@ -18,8 +18,8 @@
                         </group>
                     </group>
                     <notebook>
-                        <page>
-                            <group string="Interventions">
+                        <page string="Interventions">
+                            <group>
                                 <field name="interventions_ids">
                                     <list editable="top">
                                         <field name="name" />
@@ -34,7 +34,7 @@
                         </page>
                     </notebook>
                     <group>
-                        <field name="teeth" widget="many2many_checkboxes"/>
+                        <field name="teeth"/>
                     </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
