@@ -4,13 +4,15 @@
         <field name="name">dental.treatment.view.calendar</field>
         <field name="model">dental.treatment</field>
         <field name="arch" type="xml">
-            <calendar date_start="date" string="Dental Treatment Calendar"
-                mode="week" color="name" event_open_popup="true"
+            <calendar date_start="date"
+                string="Dental Treatment Calendar"
+                mode="week" color="name"
+                event_open_popup="true"
                 form_view_id="odooexp_treatments_form"
                 date_stop="end_date"
                 quick_create="0">
                 <field name="name" />
-                <field name="patient_id" />
+                <field name="patient_id" avatar_field="avatar_128" options="{'icon': 'fa fa-users'}" />
             </calendar>
         </field>
     </record>
