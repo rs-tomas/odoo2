@@ -61,3 +61,7 @@ class DentalTreatment(models.Model):
         self.sales_order_id = sale_order.id
         return sale_order
 
+    @api.onchange('patient_id', 'date')
+    def _onchange_name(self):
+        if self.patient_id and self.date:
+            self.name = f'{self.patient_id.name} - {self.date.strftime("%Y-%m-%d")}'
