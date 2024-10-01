@@ -29,9 +29,9 @@ class Tooth(models.Model):
 
     quarter = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4")], string='Quarter')
     position = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4"), ("5", "5"), ("6", "6"), ("7", "7"), ("8", "8")], string='Position')
-    name = fields.Integer(string='Tooth Number', compute='_compute_tooth_name')
+    name = fields.Char(string='Tooth Number', compute='_compute_tooth_name')
 
     @api.depends('quarter', 'position')
     def _compute_tooth_name(self):
         for record in self:
-            record.name = int(record.quarter) * 10 + int(record.position)
+            record.name = f'{record.quarter}{record.position}'
