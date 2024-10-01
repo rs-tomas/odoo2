@@ -7,7 +7,7 @@
             <calendar date_start="date"
                 string="Dental Treatment Calendar"
                 mode="week" color="name"
-                event_open_popup="true"
+                event_open_popup="false"
                 form_view_id="odooexp_treatments_form"
                 date_stop="end_date"
                 quick_create="0">
