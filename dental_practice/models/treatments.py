@@ -19,7 +19,6 @@ class DentalTreatment(models.Model):
     interventions_ids = fields.Many2many('dental.intervention', string='Interventions')
     sales_order_id = fields.Many2one('sale.order', string='Sales Order', readonly=True)
     profile = fields.Selection([("Therapy", "Therapy"), ("Surgery", "Surgery"), ("Orthodontics", "Orthodontics")], string='Treatment Profile')
-    teeth = fields.Many2many("dental.tooth", string='Teeth for treatment')
 
 
 # hook the write method to create a sales order. Each intervention is a sale order line.
@@ -61,15 +60,3 @@ class DentalTreatment(models.Model):
         self.sales_order_id = sale_order.id
         return sale_order
 
-class Tooth(models.Model):
-    _name = 'dental.tooth'
-    _description = 'Tooth, according to the standard numeration'
-
-    quarter = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4")], string='Quarter')
-    position = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4"), ("5", "5"), ("6", "6"), ("7", "7"), ("8", "8")], string='Position')
-    name = fields.Char(string='Tooth Number', compute='_compute_tooth_name')
-
-    @api.depends('quarter', 'position')
-    def _compute_tooth_name(self):
-        for record in self:
-            record.name = f'{record.quarter}{record.position}'
