@@ -29,10 +29,16 @@
 
 	<record id="action_menu_patients" model="ir.actions.act_window">
 		<field name="name">Patients</field>
-		<field name="context">{'search_default_filter_extend_res_search_view': 1}</field>
 		<field name="res_model">res.partner</field>
 		<field name="view_mode">list,form</field>
+		<field name="context">{
+			'default_is_patient': True,
+			'search_default_type_person': 1
+			}</field>
+		<field name="domain">[('is_company', '=', False)]</field>
+		<field name="search_view_id" ref="view_res_partner_patient_filter" />
 	</record>
+
 	<menuitem id="menu_patients"
 		name="Patients"
 		action="action_menu_patients"

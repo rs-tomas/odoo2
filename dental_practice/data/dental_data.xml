@@ -30,5 +30,134 @@
             <field name="type">service</field>
             <field name="list_price">1000.0</field>
         </record>
+
+        <record id="tooth11" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">1</field>
+        </record>
+        <record id="tooth12" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">2</field>
+        </record>
+        <record id="tooth13" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">3</field>
+        </record>
+        <record id="tooth14" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">4</field>
+        </record>
+        <record id="tooth15" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">5</field>
+        </record>
+        <record id="tooth16" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">6</field>
+        </record>
+        <record id="tooth17" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">7</field>
+        </record>
+        <record id="tooth18" model="dental.tooth">
+            <field name="quarter">1</field>
+            <field name="position">8</field>
+        </record>
+        <record id="tooth21" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">1</field>
+        </record>
+        <record id="tooth22" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">2</field>
+        </record>
+        <record id="tooth23" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">3</field>
+        </record>
+        <record id="tooth24" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">4</field>
+        </record>
+        <record id="tooth25" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">5</field>
+        </record>
+        <record id="tooth26" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">6</field>
+        </record>
+        <record id="tooth27" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">7</field>
+        </record>
+        <record id="tooth28" model="dental.tooth">
+            <field name="quarter">2</field>
+            <field name="position">8</field>
+        </record>
+        <record id="tooth31" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">1</field>
+        </record>
+        <record id="tooth32" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">2</field>
+        </record>
+        <record id="tooth33" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">3</field>
+        </record>
+        <record id="tooth34" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">4</field>
+        </record>
+        <record id="tooth35" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">5</field>
+        </record>
+        <record id="tooth36" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">6</field>
+        </record>
+        <record id="tooth37" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">7</field>
+        </record>
+        <record id="tooth38" model="dental.tooth">
+            <field name="quarter">3</field>
+            <field name="position">8</field>
+        </record>
+        <record id="tooth41" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">1</field>
+        </record>
+        <record id="tooth42" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">2</field>
+        </record>
+        <record id="tooth43" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">3</field>
+        </record>
+        <record id="tooth44" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">4</field>
+        </record>
+        <record id="tooth45" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">5</field>
+        </record>
+        <record id="tooth46" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">6</field>
+        </record>
+        <record id="tooth47" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">7</field>
+        </record>
+        <record id="tooth48" model="dental.tooth">
+            <field name="quarter">4</field>
+            <field name="position">8</field>
+        </record>
     </data>
 </odoo>

@@ -10,6 +10,7 @@
                         <group string="Data">
                             <field name="name" />
                             <field name="patient_id" />
+                            <field name="profile" />
                         </group>
                         <group string="Other Data">
                             <field name="date" />
@@ -18,20 +19,21 @@
                     </group>
                     <notebook>
                         <page string="Interventions">
-                            <group>
-                                <field name="interventions_ids">
-                                    <list string="Interventions" editable="top">
-                                        <field name="name" />
-                                        <field name="date" />
-                                        <field name="product_id" />
-                                    </list>
-                                </field>
-                            </group>
+                            <field name="interventions_ids">
+                                <list editable="top">
+                                    <field name="name" />
+                                    <field name="date" />
+                                    <field name="product_id" />
+                                </list>
+                            </field>
                         </page>
                         <page string="Notes">
-                            <field name="notes" />
+                            <field name="notes" placeholder="Notes about treatment or patient"/>
                         </page>
                     </notebook>
+                    <group>
+                        <field name="teeth" widget="many2many_tags"/>
+                    </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />
