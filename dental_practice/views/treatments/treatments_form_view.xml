@@ -19,18 +19,16 @@
                     </group>
                     <notebook>
                         <page string="Interventions">
-                            <group>
-                                <field name="interventions_ids">
-                                    <list editable="top">
-                                        <field name="name" />
-                                        <field name="date" />
-                                        <field name="product_id" />
-                                    </list>
-                                </field>
-                            </group>
+                            <field name="interventions_ids">
+                                <list editable="top">
+                                    <field name="name" />
+                                    <field name="date" />
+                                    <field name="product_id" />
+                                </list>
+                            </field>
                         </page>
                         <page string="Notes">
-                            <field name="notes" />
+                            <field name="notes" placeholder="Notes about treatment or patient"/>
                         </page>
                     </notebook>
                     <group>
