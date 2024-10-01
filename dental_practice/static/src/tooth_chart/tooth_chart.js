@@ -53,6 +53,8 @@ export class ToothChart extends Component {
     };
 
     static defaultProps = {
-        toothSelected: () => {},
+        toothSelected: () => {
+
+        },
     }
 }

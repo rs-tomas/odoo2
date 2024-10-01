@@ -34,7 +34,12 @@ class DentalTreatment(models.Model):
 
         sale_order = self.sales_order_id
         for intervention in vals.get('interventions_ids', []):
-            action, intervention_id, data = intervention
+            try:
+                action, intervention_id, data = intervention
+            except ValueError:
+                action, intervention_id = intervention
+                data = None  # or some default value
+
             intervention_id = self.env['dental.intervention'].browse(intervention_id)
             if action == 4:  # add
                 sale_order.order_line.create({

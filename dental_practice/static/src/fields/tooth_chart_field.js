@@ -1,8 +1,9 @@
-import { Component, } from "@odoo/owl";
+import { Component, useState} from "@odoo/owl";
 import { _t } from "@web/core/l10n/translation";
 import { registry } from "@web/core/registry";
 import { standardFieldProps } from "@web/views/fields/standard_field_props";
 import { ToothChart } from "../tooth_chart/tooth_chart";
+import { useRecordObserver } from "@web/model/relational_model/utils";
 
 class ToothChartField extends Component {
     static template = "dental_practice.ToothChartField";
@@ -12,7 +13,8 @@ class ToothChartField extends Component {
     static components = { ToothChart };
 
     setup() {
-        this.tooth = {
+
+        this.tooth = useState({
             11: { color: 0 },
             12: { color: 0 },
             13: { color: 0 },
@@ -45,14 +47,37 @@ class ToothChartField extends Component {
             46: { color: 0 },
             47: { color: 0 },
             48: { color: 0 },
-        };
+        });
+
+        useRecordObserver((record) => {
+            const checkedTooth = record.data[this.props.name];
+            //this.state.tooth = record.data[this.props.name];
+            console.log(checkedTooth);
+        });
+
+    }
+
+    clickToothCallback(tooth) {
+        //console.log(this.tooth[tooth].color);
+        //console.log(tooth);
+        this.tooth[tooth].color = 7;
+
+        // TODO: check if color != 0 remove from list
+
+        const result = this.props.record.data[this.props.name].addAndRemove({
+            add: [tooth],
+            //remove: [...this.idsToRemove],
+        });
+
+        return result;
+
     }
 }
 
 const toothChartField = {
     component: ToothChartField,
     displayName: _t("ToothChartField"),
-    supportedTypes: ["one2many"],
+    supportedTypes: ["one2many", "many2many"],
     isEmpty: () => false,
 };
 
