@@ -4,7 +4,7 @@
     <!-- Dental Services Category -->
     <record id="product_category_dental_services" model="product.category">
         <field name="name">Dental Services</field>
-        <field name="parent_id" ref="base_category_service"/>
+        <field name="parent_id" ref="product.product_category_3"/>
     </record>
 
     <!-- Teeth Cleaning -->

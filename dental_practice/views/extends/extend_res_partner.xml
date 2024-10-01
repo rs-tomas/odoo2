@@ -10,5 +10,31 @@
                 </xpath>
             </field>
         </record>
+
+        <record id="extend_res_partner_list_view" model="ir.ui.view">
+            <field name="name">extend.res.partner.list.view</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='email']" position="after">
+                    <field name="is_patient" string="Is Patient" />
+                    
+                </xpath>
+            </field>
+        </record>
+
+        <record id="extend_res_search_view" model="ir.ui.view">
+            <field name="name">extend.res.partner.search</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="is_patient"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <filter string='Is Patient' name='is_patient' domain="[('is_patient', '=', 'true')]"/>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
