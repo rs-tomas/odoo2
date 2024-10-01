@@ -10,6 +10,7 @@
                         <group string="Data">
                             <field name="name" />
                             <field name="patient_id" />
+                            <field name="profile" />
                         </group>
                         <group string="Other Data">
                             <field name="date" />
@@ -17,7 +18,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="Interventions">
+                        <page>
                             <group>
                                 <field name="interventions_ids">
                                     <list string="Interventions" editable="top">
@@ -32,6 +33,9 @@
                             <field name="notes" />
                         </page>
                     </notebook>
+                    <group>
+                        <field name="teeth" widget="many2many_checkboxes"/>
+                    </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />
