@@ -34,7 +34,7 @@
                         </page>
                     </notebook>
                     <group>
-                        <field name="teeth"/>
+                        <field name="teeth" widget="many2many_tags"/>
                     </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
