@@ -30,6 +30,9 @@
                             <field name="notes" placeholder="Notes about treatment or patient" />
                         </page>
                     </notebook>
+                    <group name="mouth" string="Teeth Widget">
+                        <!-- <field name="interventions_ids" widget="tooth_chart" /> -->
+                    </group>
                 </sheet>
                 <!-- <div class="oe_chatter">
                     <field name="message_follower_ids" groups="base.group_user" />
