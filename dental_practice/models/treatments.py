@@ -28,7 +28,7 @@ class Tooth(models.Model):
     _description = 'Tooth, according to the standard numeration'
 
     quarter = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4")], string='Quarter')
-    posiiton = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4"), ("5", "5"), ("6", "6"), ("7", "7"), ("8", "8")], string='Position')
+    position = fields.Selection([("1", "1"), ("2", "2"), ("3", "3"), ("4", "4"), ("5", "5"), ("6", "6"), ("7", "7"), ("8", "8")], string='Position')
     tooth_number = fields.Integer(string='Tooth Number', compute='_compute_tooth_number')
 
     @api.depends('quarter', 'position')
