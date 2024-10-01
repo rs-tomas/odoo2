@@ -8,6 +8,12 @@
                 <xpath expr="//field[@name='category_id']" position="after">
                     <field name="is_patient" string="Is Patient" />
                 </xpath>
+                <xpath expr="//page[@name='internal_notes']" position="after">
+                    <page name="treatments" string="Treatments">
+                        <field name="treatment_ids">
+                        </field>
+                    </page>
+                </xpath>
             </field>
         </record>
 
@@ -18,7 +24,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='email']" position="after">
                     <field name="is_patient" string="Is Patient" />
-                    
+
                 </xpath>
             </field>
         </record>
@@ -28,11 +34,11 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name"/>
-                    <field name="is_patient"/>
-                    <field name="email"/>
-                    <field name="phone"/>
-                    <filter string='Is Patient' name='is_patient' domain="[('is_patient', '=', 'true')]"/>
+                    <field name="name" />
+                    <field name="is_patient" />
+                    <field name="email" />
+                    <field name="phone" />
+                    <filter string='Is Patient' name='is_patient' domain="[('is_patient', '=', 'true')]" />
                 </search>
             </field>
         </record>
