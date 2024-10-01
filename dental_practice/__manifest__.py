@@ -8,15 +8,16 @@
     'website': 'http://www.odoo.com',
     'depends': ['base', 'mail', 'contacts', 'calendar', 'account', 'sale_management', 'website'],
     'data': [
-        'views/dental.xml',
         'security/ir.model.access.csv',
         'views/interventions/interventions_form_view.xml',
         'views/interventions/interventions_tree_view.xml',
         #'views/patients/patients_form_view.xml',
         #'views/patients/patients_tree_view.xml',
+        'views/patients/patients_search_view.xml',
         'views/treatments/treatments_form_view.xml',
         'views/treatments/treatments_tree_view.xml',
         'views/treatments/treatments_calendar_view.xml',
+        'views/dental.xml',
         'data/dental_data.xml',
         'views/extends/extend_res_partner.xml'
     ],
